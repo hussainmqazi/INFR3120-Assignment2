@@ -2,24 +2,26 @@ var express = require('express');
 var router = express.Router();
 
 // Routes follow WebProject and the course portfolio controller examples.
-router.get('/', function(req, res, next) {
-  res.render('pages/home', { title: 'Home' });
+// res.render() combines the named EJS view with the values in the second argument.
+router.get('/', function(req, res) {
+  // Home includes the other three views; their individual GET routes remain below.
+  res.render('pages/home', { title: 'Home', submitted: false, formError: '' });
 });
 
-router.get('/about', function(req, res, next) {
+router.get('/about', function(req, res) {
   res.render('pages/about', { title: 'About Me' });
 });
 
-router.get('/projects', function(req, res, next) {
+router.get('/projects', function(req, res) {
   res.render('pages/projects', { title: 'Projects' });
 });
 
-router.get('/contact', function(req, res, next) {
+router.get('/contact', function(req, res) {
   res.render('pages/contact', { title: 'Contact Me', submitted: false, formError: '' });
 });
 
 // Like the course example, this only renders a response; it sends no email.
-router.post('/contact', function(req, res, next) {
+router.post('/contact', function(req, res) {
   var name = req.body.name;
   var email = req.body.email;
   var message = req.body.message;

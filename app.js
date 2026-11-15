@@ -20,6 +20,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Files in public are available through paths such as /images/still-life.jpg.
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

@@ -1,51 +1,38 @@
-<section>
-  <h1>Projects</h1>
-  <p>Four artworks and a content creation project. Select any artwork to view the full image.</p>
-  <!-- Week1 float/clear columns alternate sides; Week3 media queries stack them on phones. -->
-  <article class="artwork-row">
-    <div class="artwork-image">
-      <a href="/images/still-life.jpg"><img class="img-fluid" src="/images/still-life.jpg" alt="Still life drawing of a pear and an apple"></a>
-    </div>
-    <div class="artwork-text">
-      <h2>1. Still Life Drawing &mdash; Pear and Apple</h2>
-      <p>A drawing of a pear and an apple, focusing on their shapes and shading.</p>
-    </div>
-    <div class="clear"></div>
-  </article>
-  <article class="artwork-row artwork-reverse">
-    <div class="artwork-image">
-      <a href="/images/minar-pakistan.jpg"><img class="img-fluid portrait-art" src="/images/minar-pakistan.jpg" alt="Minar-e-Pakistan artwork"></a>
-    </div>
-    <div class="artwork-text">
-      <h2>2. Minar-e-Pakistan</h2>
-      <p>An artwork showing Minar-e-Pakistan against a warm-coloured sky.</p>
-    </div>
-    <div class="clear"></div>
-  </article>
-  <article class="artwork-row">
-    <div class="artwork-image">
-      <a href="/images/sunset-painting.jpg"><img class="img-fluid" src="/images/sunset-painting.jpg" alt="Sunset painting with a reflection in water"></a>
-    </div>
-    <div class="artwork-text">
-      <h2>3. Sunset Reflection Painting</h2>
-      <p>A painting of a sunset scene and its reflection in the water.</p>
-    </div>
-    <div class="clear"></div>
-  </article>
-  <article class="artwork-row artwork-reverse">
-    <div class="artwork-image">
-      <a href="/images/birdsandmoon.jpg"><img class="img-fluid portrait-art" src="/images/birdsandmoon.jpg" alt="Pencil drawing of birds in front of the moon, with mountains and water"></a>
-    </div>
-    <div class="artwork-text">
-      <h2>4. Bird and Moon Pencil Drawing</h2>
-      <p>A pencil drawing of a bird flying in front of the moon, with mountains and water in the background. I focused on shading and reflections.</p>
-    </div>
-    <div class="clear"></div>
-  </article>
-</section>
-<section class="artwork-row">
-  <h2>5. Instagram Content Creation</h2>
-  <p>Alongside drawing and painting, I enjoy creating content for my Instagram account, @jus_tsain.</p>
-  <a class="btn btn-primary" href="https://www.instagram.com/jus_tsain/"><i class="fa-brands fa-instagram" aria-hidden="true"></i> View @jus_tsain on Instagram</a>
+<section id="projects" class="portfolio-section">
+  <% if (title == 'Home') { %>
+    <h2 class="section-title">Projects</h2>
+  <% } else { %>
+    <h1>Projects</h1>
+  <% } %>
+  <!-- Simple Bootstrap columns; each full artwork keeps its natural proportions. -->
+  <div class="row g-4">
+    <article class="col-md-6 col-lg-4 gallery-project">
+      <a class="gallery-image" href="/images/still-life.jpg"><img class="img-fluid" src="/images/still-life.jpg" alt="Watercolour still life painting of a pear and an apple"></a>
+      <h3>Still Life Drawing</h3>
+      <p class="small">This watercolour shows a pear and an apple resting on a surface. Light and dark shading give the fruit shape and separate it from the background.</p>
+    </article>
+    <article class="col-md-6 col-lg-4 gallery-project">
+      <a class="gallery-image" href="/images/minar-pakistan.jpg"><img class="img-fluid portrait-art" src="/images/minar-pakistan.jpg" alt="Minar-e-Pakistan in watercolour and pen"></a>
+      <h3>Minar-e-Pakistan</h3>
+      <p class="small">This artwork shows the Minar-e-Pakistan monument against a warm-coloured sky. Pen lines define the monument's details, while watercolour adds colour to the background.</p>
+    </article>
+    <article class="col-md-6 col-lg-4 gallery-project">
+      <a class="gallery-image" href="/images/sunset-painting.jpg"><img class="img-fluid" src="/images/sunset-painting.jpg" alt="Acrylic sunset painting with a reflection in water"></a>
+      <h3>Sunset Reflection Painting</h3>
+      <p class="small">This acrylic painting shows a sunset scene reflected in water. Warm yellows and oranges contrast with dark silhouettes and their reflections.</p>
+    </article>
+  </div>
+  <div class="row g-4 align-items-center mt-2">
+    <article class="col-md-6 col-lg-4 gallery-project">
+      <a class="gallery-image" href="/images/birdsandmoon.jpg"><img class="img-fluid portrait-art" src="/images/birdsandmoon.jpg" alt="Pencil drawing of birds in front of the moon, with mountains and water"></a>
+      <h3>Bird and Moon Pencil Drawing</h3>
+      <p class="small">This pencil drawing shows birds in front of the moon, with mountains and water below. Pencil shading creates contrast between the dark birds, the pale moon, and the reflections.</p>
+    </article>
+  <section class="col-md-6 col-lg-8 content-creation">
+    <h3>Content Creation</h3>
+    <p>I create short-form Instagram content geared towards university students. It's another creative interest I enjoy alongside drawing and painting.</p>
+    <p class="mt-3">Instagram: <a href="https://www.instagram.com/jus_tsain/">@jus_tsain</a></p>
+  </section>
+  </div>
 </section>
 

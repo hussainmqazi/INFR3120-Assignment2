@@ -1,13 +1,10 @@
-<section class="row g-4 align-items-center home-page">
-  <div class="col-md-6">
-    <h1>Hi, I'm Hussain Qazi.</h1>
-    <p>I'm a Networking and IT Security student at Ontario Tech University.</p>
-    <p>I'm interested in computer networks and security. Outside my studies, I enjoy drawing, painting, and creating content.</p>
-    <p>Here you'll find my drawings, paintings, and content creation.</p>
-    <a class="btn btn-primary" href="/projects">See my work</a>
-  </div>
-  <div class="col-md-6">
-    <img class="img-fluid" src="/images/sunset-painting.jpg" alt="Sunset reflection painting">
-    <p class="small mt-2 mb-0">Sunset Reflection Painting</p>
-  </div>
+<section id="home" class="home-intro mx-auto text-center">
+  <h1>Hello, I'm Hussain!</h1>
+  <p>I'm a Networking and IT Security student at Ontario Tech University. Outside of school, I enjoy drawing, painting, and creating content.</p>
+  <p>This portfolio brings together some of my artwork and my interest in content creation. You can browse my projects, learn a little about me, and find my contact details.</p>
+  <a class="project-link" href="#projects">View My Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
 </section>
+<!-- Reuse the course-style EJS includes so the standalone pages stay functional. -->
+<%- include('about') %>
+<%- include('projects') %>
+<%- include('contact') %>
