@@ -1,8 +1,67 @@
+/* Basic selectors, colours and floated columns follow Week1. */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: white;
+  color: #303830;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
+h1, h2, h3 { color: #123528; }
+h1 { font-size: 30px; margin-bottom: 20px; }
+h2 { font-size: 23px; }
+/* Simple borders echo pencil outlines; warm image mounts echo the drawing paper. */
+h1 { border-left: 3px solid #315640; padding-left: 12px; }
+h2 .fa-solid, h2 .fa-brands { color: #315640; }
+#main-content img { padding: 6px; border: 1px solid #a5b39d; background-color: #f5f1e7; }
+.home-page .small { color: #315640; }
+.form-label { color: #123528; }
+.form-control { border-color: #a5b39d; }
+.form-control:focus { border-color: #315640; }
+.alert-success { background-color: #edf3e9; border-color: #a5b39d; color: #123528; }
+#main-content, .site-footer .container { max-width: 1040px; }
+.home-page { margin-top: 16px; margin-bottom: 16px; }
+a { color: #1a4633; }
+a:hover { color: #09271c; }
+.site-header { background-color: #123528; }
+.navbar-brand { font-weight: bold; }
+.navbar .navbar-brand, .navbar .nav-link { color: white; }
+.navbar .nav-link:hover { color: white; text-decoration: underline; }
+.navbar .nav-link.active { color: white; font-weight: bold; text-decoration: underline; }
+.btn-primary { background-color: #123528; border-color: #123528; }
+.page-content .btn-primary:hover, .page-content .btn-primary:focus, .page-content .btn-primary:active {
+  background-color: #09271c;
+  border-color: #09271c;
+}
+.site-footer { border-top: 1px solid #c7d2c7; background-color: #f2f5ef; margin-top: 24px; font-size: 14px; }
+.clear { clear: both; }
+.artwork-row { margin-top: 28px; padding-bottom: 28px; border-bottom: 1px solid #c7d2c7; }
+.artwork-image { float: left; width: 48%; }
+/* Preserve each artwork's proportions while keeping portrait images from dominating the page. */
+.artwork-image img { display: block; width: auto; margin-left: auto; margin-right: auto; }
+.artwork-image .portrait-art { width: 250px; }
+.artwork-text { float: right; width: 46%; padding-top: 24px; }
+.artwork-text h2 { font-size: 21px; }
+.artwork-reverse .artwork-image { float: right; }
+.artwork-reverse .artwork-text { float: left; }
+/* Week3 media queries switch between desktop columns and a mobile navbar. */
+@media (min-width: 992px) {
+  .site-shell { background-color: #123528; }
+  .site-header { float: left; width: 190px; }
+  .page-content { margin-left: 190px; background-color: white; min-height: 700px; }
+  .site-header .navbar, .site-header .navbar .container,
+  .site-header .navbar-nav { display: block; }
+  .site-header .navbar-nav { width: 100%; }
+  .site-header .navbar { padding-top: 32px; }
+  .site-header .navbar .container { padding-left: 20px; padding-right: 20px; }
+  .site-header .navbar-brand { display: block; margin-bottom: 32px; }
+  .site-header .nav-link { padding: 12px 0; }
+}
+@media (max-width: 767px) {
+  .artwork-image, .artwork-text,
+  .artwork-reverse .artwork-image, .artwork-reverse .artwork-text { float: none; width: 100%; }
+  .artwork-text { padding-top: 16px; }
+}
+/* Keep the Bootstrap menu and controls free of animation. */
+.btn, .form-control, .nav-link, .collapsing { transition: none; }
 
-a {
-  color: #00B7FF;
-}

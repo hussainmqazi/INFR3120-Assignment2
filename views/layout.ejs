@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> | Hussain Qazi</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <!-- Week1's left navigation/right content structure, with the course EJS partials. -->
+  <div class="site-shell">
+    <%- include('partials/header') %>
+    <div class="page-content">
+      <main class="container p-4 p-lg-5" id="main-content">
+        <%- body %>
+      </main>
+      <%- include('partials/footer') %>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <script src="/javascripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
