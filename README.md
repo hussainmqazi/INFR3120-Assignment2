@@ -35,5 +35,3 @@ The project draws on these professor-provided materials:
 - `Javascript.zip` and Connolly/Hoar Chapter 9 slides: conditionals and validation.
 
 Bootstrap is by the Bootstrap Authors; Font Awesome is by Fonticons, Inc. Their license notices remain intact. Express, EJS, and express-ejs-layouts are third-party dependencies.
-
-AI assistance was used for implementation, writing, revisions, and testing. This is not entirely unaided work, and no AI-use percentage is claimed.
