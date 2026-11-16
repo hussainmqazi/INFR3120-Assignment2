@@ -16,7 +16,7 @@ a:hover { color: #103824; }
 .site-header { text-align: center; }
 .site-name { font-size: 24px; text-decoration: none; }
 .navbar .nav-link { color: #194d35; font-size: 14px; }
-.navbar .nav-link.active, .navbar .nav-link:hover { color: #194d35; text-decoration: underline; }
+.navbar .nav-link:hover { color: #194d35; text-decoration: underline; }
 .home-intro { width: 650px; padding-top: 20px; padding-bottom: 22px; }
 .home-intro h1 { font-size: 34px; margin-bottom: 12px; }
 .home-intro p { margin-bottom: 14px; }
@@ -44,8 +44,7 @@ a:hover { color: #103824; }
   .reading-width { width: 100%; }
 }
 @media (max-width: 767px) {
-  .home-intro { width: 100%; }
-  .home-intro { padding-top: 12px; padding-bottom: 12px; }
+  .home-intro { width: 100%; padding-top: 12px; padding-bottom: 12px; }
   .home-intro h1 { font-size: 30px; }
   .portfolio-section { padding-top: 20px; padding-bottom: 12px; }
 }

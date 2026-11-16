@@ -1,39 +1,41 @@
-# Hussain Qazi - INFR3120U Assignment 2
+﻿# Hussain Qazi - INFR3120U Assignment 2
 
-This is my personal portfolio for Web and Scripting Programming. It introduces my Networking and IT Security studies at Ontario Tech University, my artwork, and my interest in content creation.
+For this assignment, I made a personal portfolio website using Node.js, Express, EJS, Bootstrap, and Font Awesome. The website introduces me, my studies at Ontario Tech University, and some of my artwork and content creation.
 
-## Running locally
+## Website Links
 
-In the project folder, run:
+- Live website: [https://infr3120-assignment2-3dlc.onrender.com](https://infr3120-assignment2-3dlc.onrender.com)
+- GitHub: [https://github.com/hussainmqazi/INFR3120-Assignment2](https://github.com/hussainmqazi/INFR3120-Assignment2)
 
-```text
+## About My Website
+
+My website has four sections: Home, About Me, Projects, and Contact Me.
+
+The Home section introduces me, while About Me talks about my studies and interests. The Projects section shows four pieces of my artwork and includes a link to my Instagram content. The Contact section has my email and a simple contact form. The form is only for demonstration and does not actually send or save messages.
+
+I used Express Generator to create the project structure and EJS to display the pages. The header and footer are shared between the pages. I used Bootstrap for the layout and Font Awesome for the icons.
+
+## How to Run It
+
+Open the project folder in a terminal and enter:
+
+```
 npm install
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Keep the terminal running and press Ctrl+C to stop.
+Then open [http://localhost:3000](http://localhost:3000) in a browser.
 
-## Main features
+## References
 
-My homepage scrolls through Home, About Me, Projects, and Contact Me using anchor navigation. The separate `/`, `/about`, `/projects`, and `/contact` GET routes each render an EJS view through `routes/index.js`.
+I used the following course materials to help build my website:
 
-The project keeps the Express Generator structure, Node.js, ExpressJS, shared EJS layout, header, and footer. The assets are organized inside `public`. Bootstrap provides responsive layouts and mobile navigation; Font Awesome provides social icons.
+- **WebProject.zip** – Express setup, routes, and project structure.
+- **Express Portfolio example (Edolor)** – EJS layout, header, footer, and contact form.
+- **MEAN Stack Development slides** – Node.js, Express, and EJS.
+- **Week 1–4 lectures and examples** – HTML, CSS, Bootstrap-related layout concepts, responsive design, and forms.
+- **JavaScript course material** – Basic conditions and form validation.
 
-My gallery contains Still Life Drawing, Minar-e-Pakistan, Sunset Reflection Painting, and Bird and Moon Pencil Drawing. Content Creation describes my short-form Instagram content for university students and links to [@jus_tsain](https://www.instagram.com/jus_tsain/).
+I also used Bootstrap and Font Awesome for the website's styling and icons.
 
-The contact form uses HTML5 validation and displays confirmation. It is a demonstration: it does not send emails or save messages. My email, GitHub, and LinkedIn links are included.
-
-## References and acknowledgments
-
-The project draws on these professor-provided materials:
-
-- `Assignment2_ExpressJS Portfolio.pdf`: requirements and rubric.
-- `WebProject.zip`: Express structure and routes.
-- [Edolor/express-portfolio-basic](https://github.com/Edolor/express-portfolio-basic), supplied as `express-portfolio-basic-master.zip`: EJS layout, partials, and contact handling.
-- `MEAN Stack Development.pptx`: Node.js, Express, and EJS.
-- Week 1–4 PDFs and code archives: HTML, CSS, responsiveness, and forms; `Week2.pdf` covers validation.
-- `Javascript.zip` and Connolly/Hoar Chapter 9 slides: conditionals and validation.
-
-Bootstrap is by the Bootstrap Authors; Font Awesome is by Fonticons, Inc. Their license notices remain intact. Express, EJS, and express-ejs-layouts are third-party dependencies.
-
-AI assistance was used for revising and testing the code.
+AI assistance was used to help with the implementation, writing, fixing issues, and testing the website.
