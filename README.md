@@ -43,4 +43,4 @@ The project uses these supplied course references:
 
 Bootstrap is by the Bootstrap Authors; Font Awesome is by Fonticons, Inc. Express, EJS, and express-ejs-layouts are third-party dependencies. Original library license notices remain intact.
 
-AI assistance helped with implementation, writing, debugging, revisions, and testing.
+I used AI as a tool to help me build, review, and troubleshoot parts of my website.
