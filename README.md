@@ -1,41 +1,46 @@
 ﻿# Hussain Qazi - INFR3120U Assignment 2
 
-For this assignment, I made a personal portfolio website using Node.js, Express, EJS, Bootstrap, and Font Awesome. The website introduces me, my studies at Ontario Tech University, and some of my artwork and content creation.
+## Introduction
+
+This is my personal portfolio for Web and Scripting Programming. It introduces my Networking and IT Security studies at Ontario Tech University, my artwork, and my interest in content creation.
 
 ## Website Links
 
-- Live website: [https://infr3120-assignment2-3dlc.onrender.com](https://infr3120-assignment2-3dlc.onrender.com)
-- GitHub: [https://github.com/hussainmqazi/INFR3120-Assignment2](https://github.com/hussainmqazi/INFR3120-Assignment2)
+- [Live website](https://infr3120-assignment2-3dlc.onrender.com)
+- [GitHub repository](https://github.com/hussainmqazi/INFR3120-Assignment2)
 
 ## About My Website
 
-My website has four sections: Home, About Me, Projects, and Contact Me.
+My homepage scrolls through Home, About Me, Projects, and Contact Me using section links. The separate `/`, `/about`, `/projects`, and `/contact` GET routes also render their own EJS views.
 
-The Home section introduces me, while About Me talks about my studies and interests. The Projects section shows four pieces of my artwork and includes a link to my Instagram content. The Contact section has my email and a simple contact form. The form is only for demonstration and does not actually send or save messages.
+The project keeps the Express Generator structure and uses Node.js, Express, EJS, a shared layout, header, and footer. Bootstrap handles responsive layouts and mobile navigation. Font Awesome provides social icons.
 
-I used Express Generator to create the project structure and EJS to display the pages. The header and footer are shared between the pages. I used Bootstrap for the layout and Font Awesome for the icons.
+My gallery shows Still Life Drawing, Minar-e-Pakistan, Sunset Reflection Painting, and Bird and Moon Pencil Drawing. The Content Creation section links to my Instagram account, where I create short-form content for university students.
+
+The contact form checks required fields and email format in the browser and displays a confirmation. It is a demonstration and does not send emails or save messages. My actual contact and social links are included.
 
 ## How to Run It
 
-Open the project folder in a terminal and enter:
+Open the project folder in a terminal and run:
 
-```
+```text
 npm install
 npm start
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in a browser.
+Open [http://localhost:3000](http://localhost:3000). Keep the terminal running; press Ctrl+C to stop.
 
 ## References
 
-I used the following course materials to help build my website:
+The project uses these supplied course references:
 
-- **WebProject.zip** – Express setup, routes, and project structure.
-- **Express Portfolio example (Edolor)** – EJS layout, header, footer, and contact form.
-- **MEAN Stack Development slides** – Node.js, Express, and EJS.
-- **Week 1–4 lectures and examples** – HTML, CSS, Bootstrap-related layout concepts, responsive design, and forms.
-- **JavaScript course material** – Basic conditions and form validation.
+- `Assignment2_ExpressJS Portfolio.pdf`: requirements and rubric.
+- `WebProject.zip`: Express setup, routes, and Generator-style structure.
+- [Edolor/express-portfolio-basic](https://github.com/Edolor/express-portfolio-basic), supplied as `express-portfolio-basic-master.zip`: EJS layout, partials, and contact handling.
+- `MEAN Stack Development.pptx`: Express, Node.js, and EJS.
+- `Week1.pdf`, `Week2.pdf`, `Week-2-b.pdf`, `Week3.pdf`, `Week-4.pdf`, and supplied Week 1-3 code archives: HTML, CSS, responsive design, and forms.
+- `Javascript.zip`: basic conditions. `ConnollyHoar_3rdEd_Chapter 9 (1).pptx`, slides 52-53: null/empty checks adapted for the contact handler.
 
-I also used Bootstrap and Font Awesome for the website's styling and icons.
+Bootstrap is by the Bootstrap Authors; Font Awesome is by Fonticons, Inc. Express, EJS, and express-ejs-layouts are third-party dependencies. Original library license notices remain intact.
 
-AI assistance was used to help with the implementation, writing, fixing issues, and testing the website.
+AI assistance helped with implementation, writing, debugging, revisions, and testing.
