@@ -8,13 +8,15 @@
     <div class="col-md-7">
       <h2>Contact form</h2>
       <p>This form is a demonstration. It does not send emails or save messages. To contact me, use my email or Instagram link.</p>
+      <!-- This shows the confirmation after a successful form submission. -->
       <% if (submitted) { %>
         <div class="alert alert-success" role="status">Thanks, <strong><%= name %></strong>! Your demonstration form was submitted. No message was sent or saved.</div>
       <% } %>
+      <!-- This shows an error if the server finds an empty field. -->
       <% if (formError != '') { %>
         <div class="alert alert-danger" role="alert"><%= formError %></div>
       <% } %>
-      <!-- Week2, pages 29-30: required fields and HTML5 email validation. -->
+      <!-- The browser checks required fields and email format, as in Week2. -->
       <form action="/contact" method="post" class="row g-3">
         <div class="col-md-6">
           <label class="form-label" for="contact-name">Name</label>

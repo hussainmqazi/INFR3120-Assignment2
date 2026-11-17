@@ -1,4 +1,4 @@
-/* Basic selectors, fonts and spacing adapt the Week1 CSS examples. */
+/* These colours, fonts and spacing adapt the Week1 examples. */
 body {
   margin: 0;
   background-color: #f7f7f1;
@@ -24,7 +24,7 @@ a:hover { color: #103824; }
 .reading-width { width: 680px; }
 .portfolio-section { padding-top: 24px; padding-bottom: 16px; }
 .about-section p { margin-bottom: 12px; }
-/* The images use taught width rules; Bootstrap img-fluid preserves their proportions. */
+/* These widths size the artwork; Bootstrap keeps the images in proportion. */
 .gallery-project { text-align: center; margin-bottom: 8px; }
 .gallery-image { display: block; }
 .gallery-image img { width: 100%; }
@@ -39,7 +39,7 @@ a:hover { color: #103824; }
 .btn-primary { background-color: #194d35; border-color: #194d35; }
 .btn-primary:hover { background-color: #103824; border-color: #103824; }
 .form-control { border-color: #b7c6b6; }
-/* Width changes follow the responsive examples in Week3. */
+/* These widths fit smaller screens, following the Week3 examples. */
 @media (max-width: 991px) {
   .reading-width { width: 100%; }
 }
@@ -48,5 +48,5 @@ a:hover { color: #103824; }
   .home-intro h1 { font-size: 30px; }
   .portfolio-section { padding-top: 20px; padding-bottom: 12px; }
 }
-/* The transition property is taught in Week-4; none disables Bootstrap's animation. */
+/* This turns off transitions, using the property taught in Week-4. */
 .btn, .form-control, .nav-link, .collapsing { transition: none; }

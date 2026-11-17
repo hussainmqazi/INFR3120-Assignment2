@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <!-- The course layout shares the header/footer and inserts each rendered page. -->
+  <!-- This displays the shared header, using the course layout pattern. -->
   <%- include('partials/header') %>
   <main class="container py-3" id="main-content">
+    <!-- This inserts the page selected by the route. -->
     <%- body %>
   </main>
+  <!-- This displays the shared footer. -->
   <%- include('partials/footer') %>
+  <!-- Bootstrap runs the mobile navigation menu. -->
   <script src="/javascripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
